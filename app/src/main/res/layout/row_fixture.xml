@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <TextView
+            android:id="@+id/competitionTextView"
+            android:layout_width="0dp"
+            style="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/postponedTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/postponedTextView"
+            android:layout_width="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingRight="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/competitionTextView"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"
+            android:text="@string/postponed"
+            style="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:background="@android:color/black"/>
+
+    <TextView
+            android:id="@+id/venueTextView"
+            android:layout_width="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/competitionTextView"
+            style="@style/TextAppearance.AppCompat.Small"/>
+
+    <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/venueTextView"
+            style="@style/TextAppearance.AppCompat.Small"/>
+
+    <TextView
+            android:id="@+id/homeTeamTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/homeTeamScoreTextView"
+            app:layout_constraintTop_toBottomOf="@id/dateTextView"
+            android:layout_marginTop="24dp"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+            android:id="@+id/homeTeamScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/homeTeamTextView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateTextView"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="invisible"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+            android:id="@+id/awayTeamTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/awayTeamScoreTextView"
+            app:layout_constraintTop_toBottomOf="@id/homeTeamTextView"
+            android:layout_marginTop="24dp"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+            android:id="@+id/awayTeamScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/awayTeamTextView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homeTeamTextView"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="invisible"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

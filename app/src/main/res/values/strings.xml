@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Ideaware</string>
+
+    <string name="tab_text_1">Fixtures</string>
+    <string name="tab_text_2">Results</string>
+
+    <string name="postponed">Postponed</string>
+
+    <string name="generic_error">Oops, there was a problem getting the information!</string>
+
+    <string name="base_url">https://storage.googleapis.com/cdn-og-test-api/test-task/</string>
+
+</resources>
